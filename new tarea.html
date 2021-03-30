@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea - Formularios</title>
+    <H1>¡Publica ahora tu alojamiento y empieza a recibir reservas!</H1>
+
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        
+        <form action="registro.php" method="GET">
+           
+            <table align="center">
+                <tr>
+                    <td><label for="Nombre">Nombre:</label></td>
+                    <td><input type="text" name="Nombre" id="Nombre" value=""> </td>
+                </tr>
+                <tr>
+                    <td><label for="Apellido paterno">Apellido paterno:</label></td>
+                    <td><input type="text" name="Apellido paterno" id="Apellido paterno" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="Apellido materno">Apellido materno:</label></td>
+                    <td><input type="text" name="Apellido materno" id="Apellido materno" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="E-mail">E-mail:</label></td>
+                    <td><input type="text" name="E-mail" id="E-mail" value=""></td>
+                </tr>
+                <tr>
+                    <td><label for="Telefonode contactoconocimiento">Telefono de contacto</label></td>
+                    <td>
+                        <select name="Telefonode contactoconocimiento" id="Telefonode contactoconocimiento">
+                            <option value="1">Fijo - 01</option>
+                            <option value="2">Telefono - 044</option>
+                            <option value="3">Apoyo de Operadora - 02</option>
+                        </select>
+                    </td>
+                </tr><tr><td><label for="-">-:</label></td>
+                    <td><input type="text" name="-" id="-" value=""> </td></tr>
+                <tr>
+                    <td><label for="¿Donde se encuentra tu alojamiento?">¿Donde se encuentra tu alojamiento?:</label></td>
+                    <td>
+                        <select name="¿Donde se encuentra tu alojamiento?" id="¿Donde se encuentra tu alojamiento?">
+                            <option value="1">Zacatecas</option>
+                            <option value="2">Monterrey</option>
+                            <option value="3">Guadalajara</option>
+                            <option value="4">S.L.P</option>
+                            <option value="5">fresnillo</option>
+                        </select>
+                        <label>
+                            <input type="radio" value="1" name="estatus" id="estatus"> Casa
+                        </label>
+                        <label>
+                            <input type="radio" value="2" name="estatus" id ="estatus"> Departamento
+                        </label>
+                    </td>
+                </tr>
+                    <td><input type="submit" value="Registrarse"></td>
+                    <td><input type="reset" value="Limpiar campos"></td>
+            </table>
+         </form>
+
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
